@@ -1,0 +1,1074 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		5EB994E956C6409488249824 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 169CECFE5905490395CB8BA2 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				1DDD130FB38E4C10B405C6BD /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		8E1D475296D540C38A7EE7ED /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24EE656B03B442C4989E067A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				83F4E761A2AB4849B496CDE5 /* CMake Rules */,
+			);
+			dependencies = (
+				1B05D6AF7E8D4DFEB63A1522 /* PBXTargetDependency */,
+				C7F5434383C541618E150D1E /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		05A01AC2C98B4498ABA685EF /* AssemblerCodeBuffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = F58FC20E50404F1CA6556352 /* AssemblerCodeBuffer.cc */; };
+		0778E6EF3C0F4BEF990459D4 /* code-patch-tool-posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = C1A7FB90F46B448181B9DACB /* code-patch-tool-posix.cc */; };
+		129C31F555DE4B4A8A781D61 /* LiteMutableBuffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 969C83B7944D495A9F0D7393 /* LiteMutableBuffer.cc */; };
+		23B9E02E9F2E4D3BA3ADF390 /* CodeBufferBase.cc in Sources */ = {isa = PBXBuildFile; fileRef = DF1E9052395F463B82B6C9E6 /* CodeBufferBase.cc */; };
+		26F620E4B04245A58DC31F9F /* objective_c_tookit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B1630A20C49A7891151BA /* objective_c_tookit.mm */; };
+		2CA00028BDE64F438D804EAA /* closure-trampoline-common-handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA41D5226F04DD2A3CC1044 /* closure-trampoline-common-handler.cc */; };
+		2DB9F6D463AE418FA46CB534 /* PageAllocator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3518A5A7121644618C0F9A4C /* PageAllocator.cc */; };
+		373D9A5DA19043A881AED239 /* assembler-arm64.cc in Sources */ = {isa = PBXBuildFile; fileRef = 27178DF1D74F4349AA6B508C /* assembler-arm64.cc */; };
+		380D4A2CA73840448E95553B /* hide_library_darwin.c in Sources */ = {isa = PBXBuildFile; fileRef = A14D5663873B47DA93E5FB6B /* hide_library_darwin.c */; };
+		3DFC9A4787C94541AC0F95BE /* ThreadSupport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C1E994BF024417944A04DE /* ThreadSupport.cpp */; };
+		4C883D6A97EF4D8B8CEE1D5D /* DynamicBinaryInstrumentExport.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB305688B14FBDA37D9BE7 /* DynamicBinaryInstrumentExport.cc */; };
+		4C8FA3300A9D4F3AB14B77A3 /* trampoline-arm64.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E91A9DE4D4A9990335BEC /* trampoline-arm64.cc */; };
+		568B63A04F0A4680A7D03A0E /* Interceptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D31E4F5DC0694584B9284F11 /* Interceptor.cpp */; };
+		5F3BB9FF7B9B4E6984E31C66 /* function-inline-replace.cc in Sources */ = {isa = PBXBuildFile; fileRef = D2B86A874C774D5E9692AAF2 /* function-inline-replace.cc */; };
+		6312F653BF5B415A96E402B2 /* CpuRegister.cc in Sources */ = {isa = PBXBuildFile; fileRef = E28E2E6F07E547FFA834ABF6 /* CpuRegister.cc */; };
+		64978714B3734284809AF665 /* ARM64InstructionRelocation.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6A994E2966C4DE5943C059D /* ARM64InstructionRelocation.cc */; };
+		6561A781BFFE4D99951FC4B7 /* platform-posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = A908634BBA7D4A0196D26B6B /* platform-posix.cc */; };
+		66B00DAB2A5A43C7BF3E9998 /* RegisterPlugin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C2FBAE7D245EA8E15C478 /* RegisterPlugin.cc */; };
+		6A21819DAF7543CE9EC39670 /* clear-cache-tool-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7E9C72DCF58D426EB4CA87F7 /* clear-cache-tool-all.cc */; };
+		6E697F442C7F4676AEF31394 /* GetProcessMemoryLayout.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1530CB34FE404132954EE2DD /* GetProcessMemoryLayout.cc */; };
+		7296347523184F278A816AE1 /* AssemblyCode.cc in Sources */ = {isa = PBXBuildFile; fileRef = 79176525CD7C420981BF1AD9 /* AssemblyCode.cc */; };
+		72C57C3AC7294DA59DA4BD13 /* find_symbol_dyld_shared_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AF24E8FD24907B7ECAA6F /* find_symbol_dyld_shared_cache.c */; };
+		767A6CF4121B449885D93425 /* assembler.cc in Sources */ = {isa = PBXBuildFile; fileRef = AF6BFE2753D9495DBEA35E3C /* assembler.cc */; };
+		8082C4C3BBA84FBF86721518 /* InterceptRouting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B42A774BD4BAF87BAC59E /* InterceptRouting.cpp */; };
+		82A1226949CB4B9CBD37A279 /* code-patch-tool-darwin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7396983E06EE47658D9A413D /* code-patch-tool-darwin.cc */; };
+		87BE9B0725D14B13A024D8C2 /* intercept_routing_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7338CAC20D3548CCB5B349A5 /* intercept_routing_handler.cc */; };
+		88F8403084624DA9846FF39F /* LiteCollection.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9B5AB10E6B1041E5BC6EA9A3 /* LiteCollection.cc */; };
+		8B4FA33A83084DBFBBDDF2BB /* find_symbol_darwin.c in Sources */ = {isa = PBXBuildFile; fileRef = AA2D97853ED74CCA9A255664 /* find_symbol_darwin.c */; };
+		9AE1618346684F9AB58D0D40 /* code-buffer-arm64.cc in Sources */ = {isa = PBXBuildFile; fileRef = 330B321821CC488CBC504117 /* code-buffer-arm64.cc */; };
+		A659041025D74DD3822AF04C /* NearExecutableMemoryArena.cc in Sources */ = {isa = PBXBuildFile; fileRef = 627DE63537B744E483A0266D /* NearExecutableMemoryArena.cc */; };
+		A8FD051C00524A1E97F0034E /* dynamic-binary-instrument.cc in Sources */ = {isa = PBXBuildFile; fileRef = 61256B3853934DDABE91981D /* dynamic-binary-instrument.cc */; };
+		B4AC97B87B6A492782FEF0AE /* dobby.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 497FFEE357A34990978EA7A8 /* dobby.cpp */; };
+		BAAB825A13BF4269948FFD30 /* LiteObject.cc in Sources */ = {isa = PBXBuildFile; fileRef = 763B1D238C4C4C749D26F7F5 /* LiteObject.cc */; };
+		BC05EF94B95F4305BC4E8D9B /* LiteMutableArray.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4790696EBEB348738872C605 /* LiteMutableArray.cc */; };
+		BC8C35AB8B914F7A9B15FE3A /* FunctionInlineReplaceExport.cc in Sources */ = {isa = PBXBuildFile; fileRef = 121C46366D7641AE87AF185A /* FunctionInlineReplaceExport.cc */; };
+		BD7AD42F086840AC89429551 /* CpuFeature.cc in Sources */ = {isa = PBXBuildFile; fileRef = 390940DB6D254DB59FFDA6A4 /* CpuFeature.cc */; };
+		BD9C34CCD7334B2895DAEBAE /* LiteMemOpt.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2CB29AFACC3B4627B0C638E2 /* LiteMemOpt.cc */; };
+		C2041B79BF8C4D278EE8E903 /* substrated_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 5810A249B2344533B4668FB8 /* substrated_client.c */; };
+		C59CEEC6228242B8B1711998 /* dobby.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F69F82F7F44DCAB5A25BFC /* dobby.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C805302C526942C589BEAD9F /* BxxxBranchTrampoline.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3506CF410DA045B9B1F64A4A /* BxxxBranchTrampoline.cc */; };
+		CAE58A6FBE8F46708D2A5A9C /* LiteIterator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 79ABE384CDEB4FC18F6273CF /* LiteIterator.cc */; };
+		CB7393B8D2A54898A3E7787B /* cxxlogging.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1CF298916A78452F95072554 /* cxxlogging.cc */; };
+		D05369CBB2194902AF09D7EE /* ARM64AssemblyClosureTrampoline.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D9B6D2041475893521DDA /* ARM64AssemblyClosureTrampoline.cc */; };
+		DAF72EAEA9924B468C729079 /* re.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F335AD71F4012AE7822C7 /* re.c */; };
+		DFBB708BE7B947DFB27809AF /* platform-thread-posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9CE6566270CF4C1EA820109E /* platform-thread-posix.cc */; };
+		E6A78009364B4BD2834B518B /* logging.c in Sources */ = {isa = PBXBuildFile; fileRef = C5C081FF4EDA4C04B4EE9D96 /* logging.c */; };
+		F0EFA37DA247409BAA609208 /* closure-bridge-arm64.cc in Sources */ = {isa = PBXBuildFile; fileRef = 027D4F9823524972B350E428 /* closure-bridge-arm64.cc */; };
+		F18FC22655754D92AA776E3D /* codegen-arm64.cc in Sources */ = {isa = PBXBuildFile; fileRef = 383BAEC07EC64BDEBE851026 /* codegen-arm64.cc */; };
+		F5E9E737B37C4889A28994E4 /* variable_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = D5A174585A6D4EAA8596104E /* variable_cache.c */; };
+		F77337629DF64016BC848DB5 /* ExecutableMemoryArena.cc in Sources */ = {isa = PBXBuildFile; fileRef = 794656FEA67843468D00E91B /* ExecutableMemoryArena.cc */; };
+		F99674B5F2C14311ACA87E7F /* helper-arm64.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3B3DD562843049588D2A187B /* helper-arm64.cc */; };
+		FFBE0245406046DB9489346E /* PlatformThread.cc in Sources */ = {isa = PBXBuildFile; fileRef = 036C7F83B9B24DF18B0A6D10 /* PlatformThread.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BEE88FB5BD64D8B86B206AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 759B3FBDD37348F5895D7FC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B02376CCD00843298050D421;
+			remoteInfo = Dobby;
+		};
+		90C28638BECB43399F948080 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 759B3FBDD37348F5895D7FC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EB994E956C6409488249824;
+			remoteInfo = ZERO_CHECK;
+		};
+		D1A6C775E71B45BAB1C3CAF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 759B3FBDD37348F5895D7FC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EB994E956C6409488249824;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		027D4F9823524972B350E428 /* closure-bridge-arm64.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "closure-bridge-arm64.cc"; path = "source/ClosureTrampolineBridge/arm64/closure-bridge-arm64.cc"; sourceTree = SOURCE_ROOT; };
+		036C7F83B9B24DF18B0A6D10 /* PlatformThread.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlatformThread.cc; path = source/UserMode/PlatformInterface/Thread/PlatformThread.cc; sourceTree = SOURCE_ROOT; };
+		0E3B42A774BD4BAF87BAC59E /* InterceptRouting.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InterceptRouting.cpp; path = source/InterceptRouting/InterceptRouting.cpp; sourceTree = SOURCE_ROOT; };
+		121C46366D7641AE87AF185A /* FunctionInlineReplaceExport.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FunctionInlineReplaceExport.cc; path = source/InterceptRoutingPlugin/FunctionInlineReplace/FunctionInlineReplaceExport.cc; sourceTree = SOURCE_ROOT; };
+		1530CB34FE404132954EE2DD /* GetProcessMemoryLayout.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GetProcessMemoryLayout.cc; path = source/ExtraInternalPlugin/NearBranchTrampoline/PlatformUtil/Darwin/GetProcessMemoryLayout.cc; sourceTree = SOURCE_ROOT; };
+		1C9B1630A20C49A7891151BA /* objective_c_tookit.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = objective_c_tookit.mm; path = "buildin-plugin/ObjectiveC/objective_c_tookit.mm"; sourceTree = SOURCE_ROOT; };
+		1CF298916A78452F95072554 /* cxxlogging.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxxlogging.cc; path = external/logging/cxxlogging.cc; sourceTree = SOURCE_ROOT; };
+		1DA41D5226F04DD2A3CC1044 /* closure-trampoline-common-handler.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "closure-trampoline-common-handler.cc"; path = "source/ClosureTrampolineBridge/closure-trampoline-common-handler/closure-trampoline-common-handler.cc"; sourceTree = SOURCE_ROOT; };
+		27178DF1D74F4349AA6B508C /* assembler-arm64.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "assembler-arm64.cc"; path = "source/core/modules/assembler/assembler-arm64.cc"; sourceTree = SOURCE_ROOT; };
+		28F69F82F7F44DCAB5A25BFC /* dobby.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dobby.h; path = include/dobby.h; sourceTree = SOURCE_ROOT; };
+		2ABB305688B14FBDA37D9BE7 /* DynamicBinaryInstrumentExport.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DynamicBinaryInstrumentExport.cc; path = source/InterceptRoutingPlugin/DynamicBinaryInstrument/DynamicBinaryInstrumentExport.cc; sourceTree = SOURCE_ROOT; };
+		2CB29AFACC3B4627B0C638E2 /* LiteMemOpt.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LiteMemOpt.cc; path = external/stdcxx/LiteMemOpt.cc; sourceTree = SOURCE_ROOT; };
+		330B321821CC488CBC504117 /* code-buffer-arm64.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "code-buffer-arm64.cc"; path = "source/ExecMemory/CodeBuffer/code-buffer-arm64.cc"; sourceTree = SOURCE_ROOT; };
+		3506CF410DA045B9B1F64A4A /* BxxxBranchTrampoline.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BxxxBranchTrampoline.cc; path = source/ExtraInternalPlugin/NearBranchTrampoline/BxxxBranch/ARM64/BxxxBranchTrampoline.cc; sourceTree = SOURCE_ROOT; };
+		3518A5A7121644618C0F9A4C /* PageAllocator.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PageAllocator.cc; path = source/ExecMemory/PageAllocator.cc; sourceTree = SOURCE_ROOT; };
+		383BAEC07EC64BDEBE851026 /* codegen-arm64.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "codegen-arm64.cc"; path = "source/core/modules/codegen/codegen-arm64.cc"; sourceTree = SOURCE_ROOT; };
+		390940DB6D254DB59FFDA6A4 /* CpuFeature.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CpuFeature.cc; path = source/core/arch/CpuFeature.cc; sourceTree = SOURCE_ROOT; };
+		3B3DD562843049588D2A187B /* helper-arm64.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "helper-arm64.cc"; path = "source/InterceptRoutingPlugin/DynamicBinaryInstrument/helper-arch/helper-arm64.cc"; sourceTree = SOURCE_ROOT; };
+		4790696EBEB348738872C605 /* LiteMutableArray.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LiteMutableArray.cc; path = external/stdcxx/LiteMutableArray.cc; sourceTree = SOURCE_ROOT; };
+		497FFEE357A34990978EA7A8 /* dobby.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dobby.cpp; path = source/dobby.cpp; sourceTree = SOURCE_ROOT; };
+		4A4D9B6D2041475893521DDA /* ARM64AssemblyClosureTrampoline.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ARM64AssemblyClosureTrampoline.cc; path = source/ClosureTrampolineBridge/arm64/ARM64AssemblyClosureTrampoline.cc; sourceTree = SOURCE_ROOT; };
+		5810A249B2344533B4668FB8 /* substrated_client.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = substrated_client.c; path = source/UserMode/ExecMemory/substrated/mach_interface_support/substrated_client.c; sourceTree = SOURCE_ROOT; };
+		61256B3853934DDABE91981D /* dynamic-binary-instrument.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "dynamic-binary-instrument.cc"; path = "source/InterceptRoutingPlugin/DynamicBinaryInstrument/dynamic-binary-instrument.cc"; sourceTree = SOURCE_ROOT; };
+		627DE63537B744E483A0266D /* NearExecutableMemoryArena.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NearExecutableMemoryArena.cc; path = source/ExtraInternalPlugin/NearBranchTrampoline/NearExecutableMemoryArena.cc; sourceTree = SOURCE_ROOT; };
+		684C3839F7F64858802312EB /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = build_for_ios_arm64/CMakeFiles/Dobby.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		6A0C2FBAE7D245EA8E15C478 /* RegisterPlugin.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RegisterPlugin.cc; path = source/ExtraInternalPlugin/RegisterPlugin.cc; sourceTree = SOURCE_ROOT; };
+		7338CAC20D3548CCB5B349A5 /* intercept_routing_handler.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = intercept_routing_handler.cc; path = source/InterceptRoutingPlugin/DynamicBinaryInstrument/intercept_routing_handler.cc; sourceTree = SOURCE_ROOT; };
+		7396983E06EE47658D9A413D /* code-patch-tool-darwin.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "code-patch-tool-darwin.cc"; path = "source/UserMode/ExecMemory/code-patch-tool-darwin.cc"; sourceTree = SOURCE_ROOT; };
+		763B1D238C4C4C749D26F7F5 /* LiteObject.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LiteObject.cc; path = external/stdcxx/LiteObject.cc; sourceTree = SOURCE_ROOT; };
+		79176525CD7C420981BF1AD9 /* AssemblyCode.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AssemblyCode.cc; path = source/ExecMemory/AssemblyCode.cc; sourceTree = SOURCE_ROOT; };
+		794656FEA67843468D00E91B /* ExecutableMemoryArena.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ExecutableMemoryArena.cc; path = source/ExecMemory/ExecutableMemoryArena.cc; sourceTree = SOURCE_ROOT; };
+		79ABE384CDEB4FC18F6273CF /* LiteIterator.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LiteIterator.cc; path = external/stdcxx/LiteIterator.cc; sourceTree = SOURCE_ROOT; };
+		7A0F335AD71F4012AE7822C7 /* re.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = re.c; path = "buildin-plugin/FindSymbol/re/re.c"; sourceTree = SOURCE_ROOT; };
+		7D1AF24E8FD24907B7ECAA6F /* find_symbol_dyld_shared_cache.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = find_symbol_dyld_shared_cache.c; path = "buildin-plugin/FindSymbol/darwin/find_symbol_dyld_shared_cache.c"; sourceTree = SOURCE_ROOT; };
+		7E9C72DCF58D426EB4CA87F7 /* clear-cache-tool-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "clear-cache-tool-all.cc"; path = "source/UserMode/ExecMemory/clear-cache-tool-all.cc"; sourceTree = SOURCE_ROOT; };
+		8E9E91A9DE4D4A9990335BEC /* trampoline-arm64.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "trampoline-arm64.cc"; path = "source/InterceptRoutingTrampoline/arm64/trampoline-arm64.cc"; sourceTree = SOURCE_ROOT; };
+		969C83B7944D495A9F0D7393 /* LiteMutableBuffer.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LiteMutableBuffer.cc; path = external/stdcxx/LiteMutableBuffer.cc; sourceTree = SOURCE_ROOT; };
+		9B5AB10E6B1041E5BC6EA9A3 /* LiteCollection.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LiteCollection.cc; path = external/stdcxx/LiteCollection.cc; sourceTree = SOURCE_ROOT; };
+		9CE6566270CF4C1EA820109E /* platform-thread-posix.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "platform-thread-posix.cc"; path = "source/UserMode/PlatformInterface/Thread/platform-thread-posix.cc"; sourceTree = SOURCE_ROOT; };
+		A14D5663873B47DA93E5FB6B /* hide_library_darwin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = hide_library_darwin.c; path = "buildin-plugin/HideLibrary/hide_library_darwin.c"; sourceTree = SOURCE_ROOT; };
+		A6A994E2966C4DE5943C059D /* ARM64InstructionRelocation.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ARM64InstructionRelocation.cc; path = source/InstructionRelocation/arm64/ARM64InstructionRelocation.cc; sourceTree = SOURCE_ROOT; };
+		A908634BBA7D4A0196D26B6B /* platform-posix.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "platform-posix.cc"; path = "source/UserMode/PlatformInterface/Common/platform-posix.cc"; sourceTree = SOURCE_ROOT; };
+		AA2D97853ED74CCA9A255664 /* find_symbol_darwin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = find_symbol_darwin.c; path = "buildin-plugin/FindSymbol/darwin/find_symbol_darwin.c"; sourceTree = SOURCE_ROOT; };
+		AF6BFE2753D9495DBEA35E3C /* assembler.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = assembler.cc; path = source/core/modules/assembler/assembler.cc; sourceTree = SOURCE_ROOT; };
+		C1A7FB90F46B448181B9DACB /* code-patch-tool-posix.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "code-patch-tool-posix.cc"; path = "source/UserMode/ExecMemory/code-patch-tool-posix.cc"; sourceTree = SOURCE_ROOT; };
+		C4C1E994BF024417944A04DE /* ThreadSupport.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ThreadSupport.cpp; path = source/UserMode/MultiThreadSupport/ThreadSupport.cpp; sourceTree = SOURCE_ROOT; };
+		C5C081FF4EDA4C04B4EE9D96 /* logging.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = logging.c; path = external/logging/logging.c; sourceTree = SOURCE_ROOT; };
+		D2B86A874C774D5E9692AAF2 /* function-inline-replace.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "function-inline-replace.cc"; path = "source/InterceptRoutingPlugin/FunctionInlineReplace/function-inline-replace.cc"; sourceTree = SOURCE_ROOT; };
+		D31E4F5DC0694584B9284F11 /* Interceptor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Interceptor.cpp; path = source/Interceptor.cpp; sourceTree = SOURCE_ROOT; };
+		D5A174585A6D4EAA8596104E /* variable_cache.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = variable_cache.c; path = external/helpers/variable_cache.c; sourceTree = SOURCE_ROOT; };
+		DB53579BC3494FD6AB5AB3AA /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DF1E9052395F463B82B6C9E6 /* CodeBufferBase.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CodeBufferBase.cc; path = source/ExecMemory/CodeBuffer/CodeBufferBase.cc; sourceTree = SOURCE_ROOT; };
+		E28E2E6F07E547FFA834ABF6 /* CpuRegister.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CpuRegister.cc; path = source/core/arch/CpuRegister.cc; sourceTree = SOURCE_ROOT; };
+		E3439055B41C4EEEBD07661A /* Dobby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dobby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F08690701F284CB49EB542C7 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F58FC20E50404F1CA6556352 /* AssemblerCodeBuffer.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AssemblerCodeBuffer.cc; path = source/ExecMemory/AssemblerCodeBuffer.cc; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		148BE1AD0B4B473FB19D919C /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				28F69F82F7F44DCAB5A25BFC /* dobby.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		2D3FBE8FFF54484C9EF7AADC /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		4FAB2C6C51EF437CAED3E4D1 /* Dobby */ = {
+			isa = PBXGroup;
+			children = (
+				148BE1AD0B4B473FB19D919C /* Header Files */,
+				B206BE8BCE354AEA94DEB685 /* Source Files */,
+				6B8C8F02352D4BBC8C0E4C48 /* Resources */,
+				DB53579BC3494FD6AB5AB3AA /* CMakeLists.txt */,
+			);
+			name = Dobby;
+			sourceTree = "<group>";
+		};
+		6B8C8F02352D4BBC8C0E4C48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				684C3839F7F64858802312EB /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9200EB70D58F41C7A88B2405 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				2D3FBE8FFF54484C9EF7AADC /* CMake Rules */,
+				F08690701F284CB49EB542C7 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		9C47BEDEB7F743C1839CAFB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3439055B41C4EEEBD07661A /* Dobby.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B206BE8BCE354AEA94DEB685 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA2D97853ED74CCA9A255664 /* find_symbol_darwin.c */,
+				7D1AF24E8FD24907B7ECAA6F /* find_symbol_dyld_shared_cache.c */,
+				7A0F335AD71F4012AE7822C7 /* re.c */,
+				A14D5663873B47DA93E5FB6B /* hide_library_darwin.c */,
+				1C9B1630A20C49A7891151BA /* objective_c_tookit.mm */,
+				D5A174585A6D4EAA8596104E /* variable_cache.c */,
+				1CF298916A78452F95072554 /* cxxlogging.cc */,
+				C5C081FF4EDA4C04B4EE9D96 /* logging.c */,
+				9B5AB10E6B1041E5BC6EA9A3 /* LiteCollection.cc */,
+				79ABE384CDEB4FC18F6273CF /* LiteIterator.cc */,
+				2CB29AFACC3B4627B0C638E2 /* LiteMemOpt.cc */,
+				4790696EBEB348738872C605 /* LiteMutableArray.cc */,
+				969C83B7944D495A9F0D7393 /* LiteMutableBuffer.cc */,
+				763B1D238C4C4C749D26F7F5 /* LiteObject.cc */,
+				4A4D9B6D2041475893521DDA /* ARM64AssemblyClosureTrampoline.cc */,
+				027D4F9823524972B350E428 /* closure-bridge-arm64.cc */,
+				1DA41D5226F04DD2A3CC1044 /* closure-trampoline-common-handler.cc */,
+				F58FC20E50404F1CA6556352 /* AssemblerCodeBuffer.cc */,
+				79176525CD7C420981BF1AD9 /* AssemblyCode.cc */,
+				DF1E9052395F463B82B6C9E6 /* CodeBufferBase.cc */,
+				330B321821CC488CBC504117 /* code-buffer-arm64.cc */,
+				794656FEA67843468D00E91B /* ExecutableMemoryArena.cc */,
+				3518A5A7121644618C0F9A4C /* PageAllocator.cc */,
+				3506CF410DA045B9B1F64A4A /* BxxxBranchTrampoline.cc */,
+				627DE63537B744E483A0266D /* NearExecutableMemoryArena.cc */,
+				1530CB34FE404132954EE2DD /* GetProcessMemoryLayout.cc */,
+				6A0C2FBAE7D245EA8E15C478 /* RegisterPlugin.cc */,
+				A6A994E2966C4DE5943C059D /* ARM64InstructionRelocation.cc */,
+				0E3B42A774BD4BAF87BAC59E /* InterceptRouting.cpp */,
+				2ABB305688B14FBDA37D9BE7 /* DynamicBinaryInstrumentExport.cc */,
+				61256B3853934DDABE91981D /* dynamic-binary-instrument.cc */,
+				3B3DD562843049588D2A187B /* helper-arm64.cc */,
+				7338CAC20D3548CCB5B349A5 /* intercept_routing_handler.cc */,
+				121C46366D7641AE87AF185A /* FunctionInlineReplaceExport.cc */,
+				D2B86A874C774D5E9692AAF2 /* function-inline-replace.cc */,
+				8E9E91A9DE4D4A9990335BEC /* trampoline-arm64.cc */,
+				D31E4F5DC0694584B9284F11 /* Interceptor.cpp */,
+				7E9C72DCF58D426EB4CA87F7 /* clear-cache-tool-all.cc */,
+				7396983E06EE47658D9A413D /* code-patch-tool-darwin.cc */,
+				C1A7FB90F46B448181B9DACB /* code-patch-tool-posix.cc */,
+				5810A249B2344533B4668FB8 /* substrated_client.c */,
+				C4C1E994BF024417944A04DE /* ThreadSupport.cpp */,
+				A908634BBA7D4A0196D26B6B /* platform-posix.cc */,
+				036C7F83B9B24DF18B0A6D10 /* PlatformThread.cc */,
+				9CE6566270CF4C1EA820109E /* platform-thread-posix.cc */,
+				390940DB6D254DB59FFDA6A4 /* CpuFeature.cc */,
+				E28E2E6F07E547FFA834ABF6 /* CpuRegister.cc */,
+				27178DF1D74F4349AA6B508C /* assembler-arm64.cc */,
+				AF6BFE2753D9495DBEA35E3C /* assembler.cc */,
+				383BAEC07EC64BDEBE851026 /* codegen-arm64.cc */,
+				497FFEE357A34990978EA7A8 /* dobby.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F25FE92D47AB4D83818D1321 = {
+			isa = PBXGroup;
+			children = (
+				4FAB2C6C51EF437CAED3E4D1 /* Dobby */,
+				9200EB70D58F41C7A88B2405 /* ALL_BUILD */,
+				9C47BEDEB7F743C1839CAFB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		239C711A9E2E42C1B0F1A48F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59CEEC6228242B8B1711998 /* dobby.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B02376CCD00843298050D421 /* Dobby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 351FFFFC30C54C2982F86EDB /* Build configuration list for PBXNativeTarget "Dobby" */;
+			buildPhases = (
+				239C711A9E2E42C1B0F1A48F /* Headers */,
+				CB0E6EA3336144248465DAA3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D5DB7248EAA4B7E8C4BC1B9 /* PBXTargetDependency */,
+			);
+			name = Dobby;
+			productName = Dobby;
+			productReference = E3439055B41C4EEEBD07661A /* Dobby.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		759B3FBDD37348F5895D7FC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					5EB994E956C6409488249824 = {
+						DevelopmentTeam = 123456789A;
+					};
+					8E1D475296D540C38A7EE7ED = {
+						DevelopmentTeam = 123456789A;
+					};
+					B02376CCD00843298050D421 = {
+						DevelopmentTeam = X2V7CJP5W7;
+					};
+				};
+			};
+			buildConfigurationList = A4711714E0DD494C8D990E67 /* Build configuration list for PBXProject "Dobby" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F25FE92D47AB4D83818D1321;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				8E1D475296D540C38A7EE7ED /* ALL_BUILD */,
+				B02376CCD00843298050D421 /* Dobby */,
+				5EB994E956C6409488249824 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DDD130FB38E4C10B405C6BD /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/xjy/Dobby/build_for_ios_arm64 -f /Users/xjy/Dobby/build_for_ios_arm64/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		83F4E761A2AB4849B496CDE5 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/xjy/Dobby/build_for_ios_arm64 -f /Users/xjy/Dobby/build_for_ios_arm64/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB0E6EA3336144248465DAA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4FA33A83084DBFBBDDF2BB /* find_symbol_darwin.c in Sources */,
+				72C57C3AC7294DA59DA4BD13 /* find_symbol_dyld_shared_cache.c in Sources */,
+				DAF72EAEA9924B468C729079 /* re.c in Sources */,
+				380D4A2CA73840448E95553B /* hide_library_darwin.c in Sources */,
+				26F620E4B04245A58DC31F9F /* objective_c_tookit.mm in Sources */,
+				F5E9E737B37C4889A28994E4 /* variable_cache.c in Sources */,
+				CB7393B8D2A54898A3E7787B /* cxxlogging.cc in Sources */,
+				E6A78009364B4BD2834B518B /* logging.c in Sources */,
+				88F8403084624DA9846FF39F /* LiteCollection.cc in Sources */,
+				CAE58A6FBE8F46708D2A5A9C /* LiteIterator.cc in Sources */,
+				BD9C34CCD7334B2895DAEBAE /* LiteMemOpt.cc in Sources */,
+				BC05EF94B95F4305BC4E8D9B /* LiteMutableArray.cc in Sources */,
+				129C31F555DE4B4A8A781D61 /* LiteMutableBuffer.cc in Sources */,
+				BAAB825A13BF4269948FFD30 /* LiteObject.cc in Sources */,
+				D05369CBB2194902AF09D7EE /* ARM64AssemblyClosureTrampoline.cc in Sources */,
+				F0EFA37DA247409BAA609208 /* closure-bridge-arm64.cc in Sources */,
+				2CA00028BDE64F438D804EAA /* closure-trampoline-common-handler.cc in Sources */,
+				05A01AC2C98B4498ABA685EF /* AssemblerCodeBuffer.cc in Sources */,
+				7296347523184F278A816AE1 /* AssemblyCode.cc in Sources */,
+				23B9E02E9F2E4D3BA3ADF390 /* CodeBufferBase.cc in Sources */,
+				9AE1618346684F9AB58D0D40 /* code-buffer-arm64.cc in Sources */,
+				F77337629DF64016BC848DB5 /* ExecutableMemoryArena.cc in Sources */,
+				2DB9F6D463AE418FA46CB534 /* PageAllocator.cc in Sources */,
+				C805302C526942C589BEAD9F /* BxxxBranchTrampoline.cc in Sources */,
+				A659041025D74DD3822AF04C /* NearExecutableMemoryArena.cc in Sources */,
+				6E697F442C7F4676AEF31394 /* GetProcessMemoryLayout.cc in Sources */,
+				66B00DAB2A5A43C7BF3E9998 /* RegisterPlugin.cc in Sources */,
+				64978714B3734284809AF665 /* ARM64InstructionRelocation.cc in Sources */,
+				8082C4C3BBA84FBF86721518 /* InterceptRouting.cpp in Sources */,
+				4C883D6A97EF4D8B8CEE1D5D /* DynamicBinaryInstrumentExport.cc in Sources */,
+				A8FD051C00524A1E97F0034E /* dynamic-binary-instrument.cc in Sources */,
+				F99674B5F2C14311ACA87E7F /* helper-arm64.cc in Sources */,
+				87BE9B0725D14B13A024D8C2 /* intercept_routing_handler.cc in Sources */,
+				BC8C35AB8B914F7A9B15FE3A /* FunctionInlineReplaceExport.cc in Sources */,
+				5F3BB9FF7B9B4E6984E31C66 /* function-inline-replace.cc in Sources */,
+				4C8FA3300A9D4F3AB14B77A3 /* trampoline-arm64.cc in Sources */,
+				568B63A04F0A4680A7D03A0E /* Interceptor.cpp in Sources */,
+				6A21819DAF7543CE9EC39670 /* clear-cache-tool-all.cc in Sources */,
+				82A1226949CB4B9CBD37A279 /* code-patch-tool-darwin.cc in Sources */,
+				0778E6EF3C0F4BEF990459D4 /* code-patch-tool-posix.cc in Sources */,
+				C2041B79BF8C4D278EE8E903 /* substrated_client.c in Sources */,
+				3DFC9A4787C94541AC0F95BE /* ThreadSupport.cpp in Sources */,
+				6561A781BFFE4D99951FC4B7 /* platform-posix.cc in Sources */,
+				FFBE0245406046DB9489346E /* PlatformThread.cc in Sources */,
+				DFBB708BE7B947DFB27809AF /* platform-thread-posix.cc in Sources */,
+				BD7AD42F086840AC89429551 /* CpuFeature.cc in Sources */,
+				6312F653BF5B415A96E402B2 /* CpuRegister.cc in Sources */,
+				373D9A5DA19043A881AED239 /* assembler-arm64.cc in Sources */,
+				767A6CF4121B449885D93425 /* assembler.cc in Sources */,
+				F18FC22655754D92AA776E3D /* codegen-arm64.cc in Sources */,
+				B4AC97B87B6A492782FEF0AE /* dobby.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B05D6AF7E8D4DFEB63A1522 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B02376CCD00843298050D421 /* Dobby */;
+			targetProxy = 1BEE88FB5BD64D8B86B206AC /* PBXContainerItemProxy */;
+		};
+		8D5DB7248EAA4B7E8C4BC1B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EB994E956C6409488249824 /* ZERO_CHECK */;
+			targetProxy = 90C28638BECB43399F948080 /* PBXContainerItemProxy */;
+		};
+		C7F5434383C541618E150D1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EB994E956C6409488249824 /* ZERO_CHECK */;
+			targetProxy = D1A6C775E71B45BAB1C3CAF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12B7D5950A2148169D8F78D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		4B2D0539D9AD426FBEBADA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64/build;
+			};
+			name = Debug;
+		};
+		559F05F0357D454DA9B11B62 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		5C0C58CBE2754AA4B3B43EC0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64/build;
+			};
+			name = RelWithDebInfo;
+		};
+		729AFFF2668A40529230C781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		8684FF7FCEF241FD9B874B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		8F5EBA96AACC4E9B8F7D3B1E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		96E7EB3DD972408A82762467 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X2V7CJP5W7;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					Dobby_EXPORTS,
+					CODE_PATCH_WITH_SUBSTRATED,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/xjy/Dobby/source/UserMode/ExecMemory/substrated/include,
+					/Users/xjy/Dobby/.,
+					/Users/xjy/Dobby/./source,
+					/Users/xjy/Dobby/./source/UserMode,
+					/Users/xjy/Dobby/./external,
+					/Users/xjy/Dobby/./external/logging,
+					/Users/xjy/Dobby/./external/stdcxx,
+					"/Users/xjy/Dobby/./buildin-plugin/FindSymbol",
+					"/Users/xjy/Dobby/./buildin-plugin/HideLibrary",
+					"/Users/xjy/Dobby/./buildin-plugin/ObjectiveC",
+					/Users/xjy/Dobby/include,
+				);
+				INFOPLIST_FILE = /Users/xjy/Dobby/build_for_ios_arm64/CMakeFiles/Dobby.dir/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-stdlib=libc++",
+					"-fvisibility=default",
+					"-DNDEBUG",
+					"-fPIC",
+					"'-std=gnu11'",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/Frameworks",
+					"-rpath",
+					"@loader_path/Frameworks",
+					"-framework",
+					Foundation,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Dobby;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		991C0EE6F96B402582FCC4D4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64/build;
+			};
+			name = MinSizeRel;
+		};
+		A2D80735CF504A2FBF0351D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64/build;
+			};
+			name = Release;
+		};
+		C43319ADAF0448CB903427D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/xjy/Dobby/build_for_ios_arm64/build/Debug;
+				DEVELOPMENT_TEAM = X2V7CJP5W7;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					Dobby_EXPORTS,
+					CODE_PATCH_WITH_SUBSTRATED,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/xjy/Dobby/source/UserMode/ExecMemory/substrated/include,
+					/Users/xjy/Dobby/.,
+					/Users/xjy/Dobby/./source,
+					/Users/xjy/Dobby/./source/UserMode,
+					/Users/xjy/Dobby/./external,
+					/Users/xjy/Dobby/./external/logging,
+					/Users/xjy/Dobby/./external/stdcxx,
+					"/Users/xjy/Dobby/./buildin-plugin/FindSymbol",
+					"/Users/xjy/Dobby/./buildin-plugin/HideLibrary",
+					"/Users/xjy/Dobby/./buildin-plugin/ObjectiveC",
+					/Users/xjy/Dobby/include,
+				);
+				INFOPLIST_FILE = /Users/xjy/Dobby/build_for_ios_arm64/CMakeFiles/Dobby.dir/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-stdlib=libc++",
+					"-fvisibility=default",
+					"-fPIC",
+					"'-std=gnu11'",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fPIC",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/Frameworks",
+					"-rpath",
+					"@loader_path/Frameworks",
+					"-framework",
+					Foundation,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Dobby;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		E0176350ADE040358CCE4A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/xjy/Dobby/build_for_ios_arm64/build/Release;
+				DEVELOPMENT_TEAM = X2V7CJP5W7;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					Dobby_EXPORTS,
+					CODE_PATCH_WITH_SUBSTRATED,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/xjy/Dobby/source/UserMode/ExecMemory/substrated/include,
+					/Users/xjy/Dobby/.,
+					/Users/xjy/Dobby/./source,
+					/Users/xjy/Dobby/./source/UserMode,
+					/Users/xjy/Dobby/./external,
+					/Users/xjy/Dobby/./external/logging,
+					/Users/xjy/Dobby/./external/stdcxx,
+					"/Users/xjy/Dobby/./buildin-plugin/FindSymbol",
+					"/Users/xjy/Dobby/./buildin-plugin/HideLibrary",
+					"/Users/xjy/Dobby/./buildin-plugin/ObjectiveC",
+					/Users/xjy/Dobby/include,
+				);
+				INFOPLIST_FILE = /Users/xjy/Dobby/build_for_ios_arm64/CMakeFiles/Dobby.dir/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-stdlib=libc++",
+					"-fvisibility=default",
+					"-DNDEBUG",
+					"-fPIC",
+					"'-std=gnu11'",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/Frameworks",
+					"-rpath",
+					"@loader_path/Frameworks",
+					"-framework",
+					Foundation,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Dobby;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		E359B366618F4913B79E6409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		F04851B963DC49068C26EC32 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		F65739D706364D13B2F1923E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X2V7CJP5W7;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					Dobby_EXPORTS,
+					CODE_PATCH_WITH_SUBSTRATED,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/xjy/Dobby/source/UserMode/ExecMemory/substrated/include,
+					/Users/xjy/Dobby/.,
+					/Users/xjy/Dobby/./source,
+					/Users/xjy/Dobby/./source/UserMode,
+					/Users/xjy/Dobby/./external,
+					/Users/xjy/Dobby/./external/logging,
+					/Users/xjy/Dobby/./external/stdcxx,
+					"/Users/xjy/Dobby/./buildin-plugin/FindSymbol",
+					"/Users/xjy/Dobby/./buildin-plugin/HideLibrary",
+					"/Users/xjy/Dobby/./buildin-plugin/ObjectiveC",
+					/Users/xjy/Dobby/include,
+				);
+				INFOPLIST_FILE = /Users/xjy/Dobby/build_for_ios_arm64/CMakeFiles/Dobby.dir/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-stdlib=libc++",
+					"-fvisibility=default",
+					"-DNDEBUG",
+					"-fPIC",
+					"'-std=gnu11'",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/Frameworks",
+					"-rpath",
+					"@loader_path/Frameworks",
+					"-framework",
+					Foundation,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Dobby;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		FCF5F1F2E52E431D98B8286B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xjy/Dobby/build_for_ios_arm64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		169CECFE5905490395CB8BA2 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E359B366618F4913B79E6409 /* Debug */,
+				12B7D5950A2148169D8F78D0 /* Release */,
+				FCF5F1F2E52E431D98B8286B /* MinSizeRel */,
+				559F05F0357D454DA9B11B62 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		24EE656B03B442C4989E067A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				729AFFF2668A40529230C781 /* Debug */,
+				8684FF7FCEF241FD9B874B9C /* Release */,
+				8F5EBA96AACC4E9B8F7D3B1E /* MinSizeRel */,
+				F04851B963DC49068C26EC32 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		351FFFFC30C54C2982F86EDB /* Build configuration list for PBXNativeTarget "Dobby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C43319ADAF0448CB903427D6 /* Debug */,
+				E0176350ADE040358CCE4A27 /* Release */,
+				96E7EB3DD972408A82762467 /* MinSizeRel */,
+				F65739D706364D13B2F1923E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A4711714E0DD494C8D990E67 /* Build configuration list for PBXProject "Dobby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B2D0539D9AD426FBEBADA90 /* Debug */,
+				A2D80735CF504A2FBF0351D6 /* Release */,
+				991C0EE6F96B402582FCC4D4 /* MinSizeRel */,
+				5C0C58CBE2754AA4B3B43EC0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 759B3FBDD37348F5895D7FC8 /* Project object */;
+}
