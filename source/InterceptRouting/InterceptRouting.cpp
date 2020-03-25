@@ -20,7 +20,8 @@ void InterceptRouting::Prepare() {
 
 #define DUMMY_0 0
   // gen the relocated code
-  relocatedCode = GenRelocateCode((void *)entry_->target_address, &relocate_size, DUMMY_0, DUMMY_0);
+  int fake_size = 48;
+  relocatedCode = GenRelocateCode((void *)entry_->target_address, &fake_size, DUMMY_0, DUMMY_0);
 
   // set the relocated instruction address
   entry_->relocated_origin_function = (void *)relocatedCode->raw_instruction_start();

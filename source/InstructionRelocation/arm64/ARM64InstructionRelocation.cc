@@ -247,8 +247,9 @@ AssemblyCode *GenRelocateCode(void *buffer, int *relocate_size_ptr, addr_t from_
         }
       }
       _ nop();
-    } else if ((instr & ConditionalBranchFixedMask) == ConditionalBranchFixed) { // b.cond
-
+    } else if ((instr & ConditionalBranchFixedMask) == ConditionalBranchFixed) { // b.cond.  b.le    0x100005ef4
+        
+      addr_t imm = decode_imm19_offset(instr);
       addr_t branch_address = decode_imm19_offset(instr) + curr_orig_pc;
 
       uint32_t branch_instr = instr;
@@ -291,8 +292,8 @@ AssemblyCode *GenRelocateCode(void *buffer, int *relocate_size_ptr, addr_t from_
       iter = LiteCollectionIterator::withCollection(labels);
       while ((dataLabel = reinterpret_cast<PseudoDataLabel *>(iter->getNextObject())) != NULL) {
         if (dataLabel->address == curr_orig_pc) {
-          FATAL("label(%p) in relo-code range(%p-%p), please enable b-xxx branch plugin.", dataLabel->address, from_pc,
-                from_pc + *relocate_size_ptr);
+//          FATAL("label(%p) in relo-code range(%p-%p), please enable b-xxx branch plugin.", dataLabel->address, from_pc,
+//                from_pc + *relocate_size_ptr);
         }
       }
       delete iter;

@@ -68,13 +68,14 @@ public:
     PseudoLabelInstruction *instruction;
     LiteCollectionIterator *iter = LiteCollectionIterator::withCollection(&instructions_);
     while ((instruction = reinterpret_cast<PseudoLabelInstruction *>(iter->getNextObject())) != NULL) {
-      int32_t offset       = pos() - instruction->position_;
+      int32_t offset       = pos() - instruction->position_; // label address 在内存中的相对地址。会写到最后
       const int32_t inst32 = _buffer->LoadInst(instruction->position_);
       int32_t encoded      = 0;
 
       switch (instruction->type_) {
       case kLdrLiteral: {
         encoded = inst32 & 0xFF00001F;
+          // >> 2 对齐
         encoded = encoded | LFT((offset >> 2), 19, 5);
       } break;
       default:
@@ -90,7 +91,7 @@ public:
 
   void link_to(int pos, PseudoLabelType type) {
     PseudoLabelInstruction *instruction = new PseudoLabelInstruction;
-    instruction->position_              = pos;
+    instruction->position_              = pos; // 相对于codebuffer的偏移量，辅助查找当前生成指令地址。
     instruction->type_                  = type;
     instructions_.pushObject((LiteObject *)instruction);
   }
@@ -593,7 +594,8 @@ public:
       ldr(rt, dest);
     } else {
       // record this ldr, and fix later.
-      label->link_to(buffer_->getSize(), PseudoLabel::kLdrLiteral);
+      int size = buffer_->getSize();
+      label->link_to(size, PseudoLabel::kLdrLiteral);
       ldr(rt, 0);
     }
   }

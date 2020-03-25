@@ -9,15 +9,19 @@
 #import "ViewController.h"
 #import "dobby.h"
 
-void test_symbol(void) {
-    printf("execute test_symbol\n");
+void test_symbol(int a, int b) {
+    if (a > b) {
+        a = a - 1;
+    } else {
+        b = b - 1;
+    }
 }
 
-void (*origin_test_symbol)(void);
+void (*origin_test_symbol)(int a, int b);
 
-void fake_test_symbol(void) {
+void fake_test_symbol(int a, int b) {
     printf("execute fake_test_symbol\n");
-    origin_test_symbol();
+    origin_test_symbol(a,b);
 }
 
 @interface ViewController ()
@@ -32,7 +36,7 @@ void fake_test_symbol(void) {
     find_result = DobbyFindSymbol("ios-example", "_test_symbol");
     
     DobbyHook((void *)find_result, (void *)fake_test_symbol, (void **)&origin_test_symbol);
-    test_symbol();
+    test_symbol(1,2);
     
     // Do any additional setup after loading the view.
 }
